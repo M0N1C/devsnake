@@ -1,0 +1,110 @@
+/* Fondo general de la página */
+body {
+    background-color: black; /* Fondo negro para toda la página */
+    color: white; /* Texto en blanco para contraste */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el contenedor del canvas */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Canvas del juego */
+#gameCanvas {
+    background-color: black; /* Fondo negro para el canvas */
+    border: 3px solid white; /* Borde blanco para destacar el área de juego */
+}
+
+/* Estilo para el panel de atributos de la serpiente */
+#snake-attributes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #444;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Estilo para los elementos individuales de los atributos */
+.attribute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribute-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.attribute-value {
+    font-size: 18px;
+}
+
+/* Estilo para botones */
+.button {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e67e22;
+}
+
+/* Preguntas del cuestionario */
+#question-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: white;
+    display: none; /* Oculto hasta que se muestre una pregunta */
+    z-index: 100;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilo de las opciones de respuesta */
+.answer-option {
+    display: block;
+    margin: 10px 0;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-option:hover {
+    background-color: #777;
+}
