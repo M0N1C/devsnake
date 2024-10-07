@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego de la Serpiente</title>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="snake-attributes">
+            <div class="attribute">
+                <span class="attribute-label">Vitamine:</span>
+                <span class="attribute-value" id="vitamine">100</span>
+            </div>
+            <div class="attribute">
+                <span class="attribute-label">Hidratation:</span>
+                <span class="attribute-value" id="hydration">100</span>
+            </div>
+            <div class="attribute">
+                <span class="attribute-label">Sun:</span>
+                <span class="attribute-value" id="sun">100</span>
+            </div>
+            <div class="attribute">
+                <span class="attribute-label">Focus:</span>
+                <span class="attribute-value" id="focus">100</span>
+            </div>
+        </div>
+        <button class="button" id="start-button">Play</button>
+    </div>
+    <script type="module" src="board.js"></script>
+    <script type="module" src="object.js"></script>
+    <script type="module" src="snake.js"></script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
