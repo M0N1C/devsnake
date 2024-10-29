@@ -11,7 +11,7 @@ class Game {
         }
         this.ctx = this.canvas.getContext('2d');
         this.board = new Board(20, 20); // Crear un tablero de 20x20
-        this.snake = new Snake(); // Asegúrate de que se cree correctamente
+        this.snake = new Snake(); 
         this.items = [];
         this.score = 0;
         this.coffeeSpeed = 100; // Velocidad normal del juego
